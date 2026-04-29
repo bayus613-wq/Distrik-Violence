@@ -544,7 +544,7 @@ function createPremiumSlider(labelText, setting, minVal, maxVal, currentVal, cal
     fill.Parent = sliderBtn
     
     sliderBtn.MouseButton1Down:Connect(function()
-        loca move
+        local move
         move = UserInputService.InputChanged:Connect(function(input)
             if input.UserInputType == Enum.UserInputType.MouseMovement then
                 local x = math.clamp((input.Position.X - sliderBtn.AbsolutePosition.X) / sliderBtn.AbsoluteSize.X, 0, 1)
